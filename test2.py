@@ -51,4 +51,35 @@ class Soda:
 sod=Soda("лимон")
 print(sod.show_my_drink())
          
+# 4 задание  
+class Name:  
+    def __init__(self, age = 0):  
+         self._age = age   
+    def get_age(self):  
+        return self._age  
+     
+    def set_age(self, a):  
+        self._age = a  
+   
+John = Name()  
+   
+John.set_age(19)     
+print(John.get_age())    
+print(John._age)
 
+# 5 задание
+class Auto:
+    def ride(self):
+        print("Riding on a ground")
+       
+
+class Boat:
+    def swim(self):
+        print("Sailing in the ocean")
+
+class Amphibian(Auto, Boat):
+    pass
+ 
+a = Amphibian()
+a.ride()
+a.swim()        
